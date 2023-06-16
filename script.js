@@ -13,12 +13,16 @@ function minusFunction(price, product, productNumber){
 
    document.getElementById(product).innerText = "$" + total;
 
-   let finalCost = parseFloat(document.getElementById("finalTotal").innerText);
+   let finalCost = parseFloat(document.getElementById("subTotal").innerText);
    finalCost = finalCost - price;
 
-   document.getElementById("finalTotal").innerText = finalCost;
+   let Tex = (finalCost*5)/100;
 
    document.getElementById("subTotal").innerText = finalCost;
+
+   document.getElementById("Tex").innerText = Tex;
+
+   document.getElementById("finalTotal").innerText = finalCost + Tex;
 
 }
 function plusFunction(price , product, productNumber){
@@ -33,10 +37,14 @@ function plusFunction(price , product, productNumber){
 
    document.getElementById(product).innerText = "$" + total;
 
-   let finalCost = parseFloat(document.getElementById("finalTotal").innerText);
+   let finalCost = parseFloat(document.getElementById("subTotal").innerText);
    finalCost = finalCost + price;
 
-   document.getElementById("finalTotal").innerText = finalCost;
+   let Tex = (finalCost*5)/100;
 
    document.getElementById("subTotal").innerText = finalCost;
+
+   document.getElementById("Tex").innerText = Tex;
+
+   document.getElementById("finalTotal").innerText = finalCost + Tex;
 }

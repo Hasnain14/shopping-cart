@@ -48,3 +48,26 @@ function plusFunction(price , product, productNumber){
 
    document.getElementById("finalTotal").innerText = finalCost + Tex;
 }
+
+function submutFunction(){
+
+    
+   let inputArea = document.getElementsByClassName("input");
+
+   for (let i = 0; i < inputArea.length; i++) {
+        inputArea[i].value = 0;
+    
+   }
+
+   let priceArea = document.getElementsByClassName("price");
+
+   for (let i = 0; i < priceArea.length; i++) {
+        priceArea[i].innerText = "$" + 00;
+   }
+
+   document.getElementById("subTotal").innerText = 00;
+
+   document.getElementById("Tex").innerText = 00;
+
+    document.getElementById("finalTotal").innerText = 00;
+}
